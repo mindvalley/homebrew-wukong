@@ -9,18 +9,18 @@ class Wukong < Formula
   on_macos do
     on_arm do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-arm.tar.gz"
-      sha256 "e3f61f8f4a93782fdb0761adff19b12d09c7e6f1efb3da6224c9a97d587ae428"
+      sha256 "a477975f1a95da712d5cd5e2ecf5ab792b70f9ec5949b8a60311944ce050cc5c"
     end
 
     on_intel do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-x86.tar.gz"
-      sha256 "864bcd6aac05bee520c8bddd2cc5f9b1d9e3125157d1812c99f1ae28fb687c2f"
+      sha256 "da0f0b0355bcbe23cd83a13fe40b2f9739a4a02d33a8775d56493bcfbe9deb74"
     end
   end
 
   on_linux do
     url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-linux-x86.tar.gz"
-    sha256 "b4730ec5731f1792a572b8ff67bcd0266c01ff2c2e07e2fd9448bf70bde70f02"
+    sha256 "a0e0b2c9a74db63fa4a665f5cbcad0be7bc0114ab8ae908d86955765bd2e850a"
   end
 
 
@@ -32,3 +32,4 @@ class Wukong < Formula
     fish_completion.install "completions/fish/wukong.fish"
   end
 end
+
