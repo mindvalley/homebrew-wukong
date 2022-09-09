@@ -1,0 +1,26 @@
+name: release-pr
+
+on:
+  push:
+    branches:
+      - 'release/[0-9]+.[0-9]+.[0-9]+*'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  create-pr:
+    name: Create PR to bump version
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create a new PR to bump version
+        env:
+          DEBUG: api
+        run: |
+          VERSION=${{ github.ref_name }}
+          VERSION=${VERSION#release/}
+          echo VERSION
+
+#          gh pr create --title "Homebrew Release: Wukong ${VERSION}" --body "Bump version to ${VERSION}." --label "release"
