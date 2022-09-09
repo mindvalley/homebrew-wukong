@@ -21,6 +21,5 @@ jobs:
         run: |
           VERSION=${{ github.ref_name }}
           VERSION=${VERSION#release/}
-          echo VERSION
 
-#          gh pr create --title "Homebrew Release: Wukong ${VERSION}" --body "Bump version to ${VERSION}." --label "release"
+          gh pr create --title "Homebrew Release: Wukong ${VERSION}" --body "Bump version to ${VERSION}." --label "release"
