@@ -9,18 +9,18 @@ class Wukong < Formula
   on_macos do
     on_arm do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-arm.tar.gz"
-      sha256 "a477975f1a95da712d5cd5e2ecf5ab792b70f9ec5949b8a60311944ce050cc5c"
+      sha256 "99f0b4b339af969b6feaeb8107bdf586b41552073cbff2b6c24336b2abbd6b52"
     end
 
     on_intel do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-x86.tar.gz"
-      sha256 "da0f0b0355bcbe23cd83a13fe40b2f9739a4a02d33a8775d56493bcfbe9deb74"
+      sha256 "33acd64098b6474fa5926524e7b67035a6ae6a221af472ec6d3351fa084cd143"
     end
   end
 
   on_linux do
     url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-linux-x86.tar.gz"
-    sha256 "a0e0b2c9a74db63fa4a665f5cbcad0be7bc0114ab8ae908d86955765bd2e850a"
+    sha256 "7bea4f36b4624157399a69ab354bd508c5257ce77a7544d299966c11dc961aad"
   end
 
 
