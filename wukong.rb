@@ -4,23 +4,23 @@
 class Wukong < Formula
   desc "A Swiss-army Knife CLI For Mindvalley Developers"
   homepage "https://github.com/mindvalley/wukong-cli"
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-arm.tar.gz"
-      sha256 "45e9f2eafa900025b49c3be1c4c80740d876a2ae927c84b46f4bda91e772a526"
+      sha256 "cc43aae6a7d17a9b8e107f90b2993102948a79e67cdba0236a51fe688b06606b"
     end
 
     on_intel do
       url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-macOS-x86.tar.gz"
-      sha256 "4b8d00008129c28fa2cd0fc2590e4feb5b670ffd39e981d621cc7eade3497f9a"
+      sha256 "ac79b418dceab2a142458fc901b10bb29d8af25e8a939ab9c5fe4681bd3b4bac"
     end
   end
 
   on_linux do
     url "https://github.com/mindvalley/wukong-cli/releases/download/#{version}/wukong-v#{version}-linux-x86.tar.gz"
-    sha256 "d9a6244417a43a32d2808a837723a125ce6d970e1b7da98b154ce8f72a16fc58"
+    sha256 "2fc2ffcaf06ddeabe37cd3d1db95f2fb3e093efd97a7aa679a498b78dc62df7f"
   end
 
 
